@@ -1,5 +1,6 @@
   body {
       background-color: black;
+
   }
 
   /* control the container  */
@@ -100,7 +101,7 @@
   .box1 {
       padding: 10px;
       width: 50px;
-      height: 91vh;
+      height: 84vh;
       border-radius: 10px;
       flex-direction: column;
       /* border: 2px solid white; */
@@ -127,7 +128,7 @@
 
   .box2 {
       width: 80vw;
-      height: 91vh;
+      height: 86vh;
       border: 2px solid white;
       border-radius: 10px;
       border: none;
@@ -234,6 +235,8 @@
       display: flex;
       gap: 12px;
 
+
+
   }
 
   .card {
@@ -241,6 +244,7 @@
       width: 196px;
       height: 250px;
       box-sizing: border-box;
+      position: relative;
   }
 
   .card img {
@@ -281,4 +285,79 @@
       padding: 0;
       font-size: 20px;
       color: white;
+  }
+
+  .playbutton {
+      position: absolute;
+      background-color: #1ed760;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 10%;
+      bottom: 30%;
+      opacity: 0;
+      padding: 4px 4px 4px 4px;
+      transform: translateY(60px);
+      transition: all 0.2s ease-in-out;
+  }
+
+  .card:hover .playbutton {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .playbutton img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .playlist {
+      width: fit-content;
+      height: fit-content;
+
+  }
+
+  .cardcontainer {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+
+  .box2 {
+      min-height: fit-content;
+      box-sizing: border-box;
+      overflow: hidden;
+      overflow: scroll;
+
+  }
+
+  .header {
+      overflow: none;
+      /* position: absolute; */
+  }
+
+  .footer {
+      margin-top: 12px;
+      width: 100%;
+      background-color: rgb(61, 58, 58);
+      height: 70px;
+      position: sticky;
+  }
+
+.footer  .play {
+    gap: 10px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      position: relative;
+      bottom: -23px;
+      height: 30px;
+
+  }
+  .play img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
