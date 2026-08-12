@@ -1,0 +1,24 @@
+{
+  "name": "video_no_86",
+  "version": "1.0.0",
+  "description": "how to use commom.js",
+  "keywords": [
+    "common.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "leaningcode"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "learn everything",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
